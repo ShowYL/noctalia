@@ -1,0 +1,13 @@
+hl.bind("SUPER + Q", hl.dsp.window.close(), { description = "Window: Close" })
+hl.bind("SUPER + E", hl.dsp.exec_cmd(fileManager), { description = "App: File manager" })
+hl.bind("SUPER + W", hl.dsp.exec_cmd(browser), { description = "App: Browser" })
+hl.bind("SUPER + C", hl.dsp.exec_cmd(codeEditor), { description = "App: Code editor" })
+hl.bind("SUPER + T", hl.dsp.exec_cmd(terminal))
+
+hl.bind("SUPER + L", hl.dsp.exec_cmd("noctalia msg session lock"))
+hl.bind("ALT + escape", hl.dsp.exec_cmd("noctalia msg panel-toggle session"))
+hl.bind("SUPER + J", hl.dsp.exec_cmd("noctalia msg bar-toggle"))
+hl.bind("SUPER + V", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"))
+hl.bind("PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
+hl.bind("CTRL + PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-fullscreen"))
+hl.bind("SUPER + P", hl.dsp.exec_cmd("noctalia msg panel-toggle oldirtty/color_picker:panel"))

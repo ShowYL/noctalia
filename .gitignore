@@ -1,0 +1,14 @@
+*
+!fish/
+!fish/**
+!hypr/
+!hypr/**
+!kitty/
+!kitty/**
+!zsh/
+!zsh/**
+!noctalia/
+!noctalia/**
+!.gitignore
+!starship.toml
+!user-dirs.dirs

@@ -1,0 +1,4 @@
+terminal = "kitty"
+fileManager = "dolphin"
+browser = "zen-browser"
+codeEditor = "code"
