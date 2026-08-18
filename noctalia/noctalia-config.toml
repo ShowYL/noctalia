@@ -25,7 +25,7 @@ start = [ "launcher", "theme_mode", "wallpaper", "group:g1", "keybinds", "worksp
     enabled = true
     fill = "surface_variant"
     id = "g1"
-    members = [ "ram", "sysmon", "cpu" ]
+    members = [ "ram", "sysmon", "cpu", "network_rx", "network_tx" ]
     opacity = 0.0
     padding = 6.0
 
@@ -223,16 +223,20 @@ wallpaper_scheme = "m3-rainbow"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/yann/Pictures/Wallpapers/1064205.png"
+    path = "/home/yann/Pictures/Wallpapers/child-river-dreams.jpg"
 
     [wallpaper.last]
-    path = "/home/yann/Pictures/Wallpapers/1064205.png"
+    path = "/home/yann/Pictures/Wallpapers/child-river-dreams.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/yann/Pictures/Wallpapers/1064205.png"
+    path = "/home/yann/Pictures/Wallpapers/child-river-dreams.jpg"
 
     [[wallpaper.favorite]]
     path = "/home/yann/Pictures/Wallpapers/2020-12-19 23_42_56-Window.png"
+    theme_mode = "auto"
+
+    [[wallpaper.favorite]]
+    path = "/home/yann/Pictures/Wallpapers/backiee-218448-landscape.jpg"
     theme_mode = "auto"
 
 [weather]
@@ -246,6 +250,9 @@ anchor = true
 
 [widget.control-center]
 enabled = false
+
+[widget.cpu]
+visualization = "none"
 
 [widget.input_volume]
 show_label = false
@@ -262,12 +269,24 @@ max_length = 170
 [widget.network]
 show_label = false
 
+[widget.network_rx]
+visualization = "none"
+
+[widget.network_tx]
+visualization = "none"
+
+[widget.ram]
+stat = "ram_pct"
+visualization = "none"
+
 [widget.status]
 show_counts = false
 type = "davemhammer/tailscale:status"
 
 [widget.sysmon]
+glyph = "switch-vertical"
 stat = "swap_pct"
+visualization = "none"
 
 [widget.tray]
 capsule_opacity = 0.5

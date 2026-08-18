@@ -109,26 +109,26 @@ format = '[](bold fg:252)[󰪢 $duration](bold bg:252 fg:235)[](bold fg:25
 
 [palettes.noctalia]
 # Standard colors
-blue      = "#edbe92"
+blue      = "#e4bad9"
 red       = "#ffb4ab"
-green     = "#ffb1c3"
-yellow    = "#e4bdc4"
-cyan      = "#e4bdc4"
-magenta   = "#ffb1c3"
+green     = "#b8c4ff"
+yellow    = "#c2c5dd"
+cyan      = "#c2c5dd"
+magenta   = "#b8c4ff"
 white     = "#e2e2e2"
 black     = "#474747"
 
 # Extended palette (Catppuccin-compatible names)
-rosewater = "#e4bdc4"
+rosewater = "#c2c5dd"
 flamingo  = "#ffb4ab"
-pink      = "#ffb1c3"
-mauve     = "#ffb1c3"
+pink      = "#b8c4ff"
+mauve     = "#b8c4ff"
 maroon    = "#ffb4ab"
-peach     = "#e4bdc4"
-teal      = "#e4bdc4"
-sky       = "#e4bdc4"
-sapphire  = "#edbe92"
-lavender  = "#ffb1c3"
+peach     = "#c2c5dd"
+teal      = "#c2c5dd"
+sky       = "#c2c5dd"
+sapphire  = "#e4bad9"
+lavender  = "#b8c4ff"
 
 # Text shades
 text      = "#e2e2e2"
