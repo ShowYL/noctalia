@@ -3,7 +3,7 @@ background_opacity = 0.4999999888241291
 capsule = true
 capsule_opacity = 0.0
 capsule_padding = 5.0
-center = [ "notifications", "clock" ]
+center = [ "network_rx", "network_tx", "notifications", "clock" ]
 end = [
     "media",
     "tray",
@@ -25,7 +25,7 @@ start = [ "launcher", "theme_mode", "wallpaper", "group:g1", "keybinds", "worksp
     enabled = true
     fill = "surface_variant"
     id = "g1"
-    members = [ "ram", "sysmon", "cpu", "network_rx", "network_tx" ]
+    members = [ "ram", "sysmon", "cpu" ]
     opacity = 0.0
     padding = 6.0
 
@@ -62,11 +62,12 @@ show_instance_count = false
 
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+pre_action_fade_seconds = 5
 
     [idle.behavior.lock]
     action = "lock"
     enabled = true
-    timeout = 600.0
+    timeout = 300.0
 
     [idle.behavior.lock-and-suspend]
     action = "lock_and_suspend"
@@ -76,7 +77,7 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
     [idle.behavior.screen-off]
     action = "screen_off"
     enabled = true
-    timeout = 660.0
+    timeout = 600.0
 
 [location]
 address = "Toulouse, France"
@@ -209,7 +210,8 @@ settings_window_translucent = true
     directory = "/home/yann/Pictures/screenshots"
 
 [theme]
-builtin = "Nord"
+builtin = "Ayu"
+community_palette = "Oxocarbon"
 custom_palette = "alena-aenami-far-from-tomorrow-rb"
 mode = "dark"
 source = "wallpaper"
@@ -223,13 +225,13 @@ wallpaper_scheme = "m3-rainbow"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/yann/Pictures/Wallpapers/child-river-dreams.jpg"
+    path = "/home/yann/Pictures/Wallpapers/alena-aenami-cold.jpg"
 
     [wallpaper.last]
-    path = "/home/yann/Pictures/Wallpapers/child-river-dreams.jpg"
+    path = "/home/yann/Pictures/Wallpapers/alena-aenami-cold.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/yann/Pictures/Wallpapers/child-river-dreams.jpg"
+    path = "/home/yann/Pictures/Wallpapers/alena-aenami-cold.jpg"
 
     [[wallpaper.favorite]]
     path = "/home/yann/Pictures/Wallpapers/2020-12-19 23_42_56-Window.png"
@@ -252,6 +254,7 @@ anchor = true
 enabled = false
 
 [widget.cpu]
+glyph = "cpu"
 visualization = "none"
 
 [widget.input_volume]
@@ -276,6 +279,7 @@ visualization = "none"
 visualization = "none"
 
 [widget.ram]
+glyph = "section"
 stat = "ram_pct"
 visualization = "none"
 
@@ -284,7 +288,7 @@ show_counts = false
 type = "davemhammer/tailscale:status"
 
 [widget.sysmon]
-glyph = "switch-vertical"
+glyph = "switch-horizontal"
 stat = "swap_pct"
 visualization = "none"
 
